@@ -1,0 +1,214 @@
+<html>
+<header><title>chapter 5</title></header>
+<body>
+<h1>Images</h1>
+<p>There are many reasons why you might 
+want to add an image to a web page: you 
+might want to include a logo, photograph, 
+illustration, diagram, or chart.
+There are several things to consider when selecting and 
+preparing images for your site, but taking time to get them 
+right will make it look more attractive and professional.
+In this chapter you will learn how to:<br/><ul>
+<li> Include an image in your web pages using HTML</li>
+<li>Pick which image format to use</li>
+<li>Show an image at the right size</li>
+<li>Optimize an image for use on the web to make pages 
+load faster</li></p>
+<h2>Adding Images</h2>
+<p>To add an image into the page 
+you need to use an img
+element. This is an empty 
+element (which means there is 
+no closing tag). It must carry the 
+following two attributes:
+<br/><h4>src</h4>
+This tells the browser where 
+it can find the image file. This 
+will usually be a relative URL 
+pointing to an image on your 
+own site. (Here you can see that 
+the images are in a child folder 
+called images — relative URLs 
+were covered on pages 83-84). 
+<br/><h4>alt</h4>
+
+This provides a text description 
+of the image which describes the 
+image if you cannot see it.
+<br/><h4>title</h4>
+
+You can also use the title
+attribute with the img element 
+to provide additional information 
+about the image. Most browsers 
+will display the content of this 
+attribute in a tootip when the 
+user hovers over the image.example:<br/><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\IMG_2183.jpg" height="600" width="390" alt="here is a painting's picture made by lovesh.arts" title="For such more paintings follow at lovesh.arts@instagram.com"/></p>
+<h2>Height & Width
+ of Images</h2>
+<p>You will also often see an img
+element use two other attributes 
+that specify its size:
+height
+This specifies the height of the 
+image in pixels.
+width
+This specifies the width of the 
+image in pixels.
+Images often take longer to 
+load than the HTML code that 
+makes up the rest of the page. 
+It is, therefore, a good idea to 
+specify the size of the image 
+so that the browser can render 
+the rest of the text on the page 
+while leaving the right amount of 
+space for the image that is still 
+loading.
+The size of images is increasingly 
+being specified using CSS rather 
+than HTML — see pages 409-
+410 for more information about 
+this. example:<br/><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\IMG_2192.jpg" height="300" width="230"/> <img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\IMG_2192.jpg" height="250" width="200"/> <img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\IMG_2192.jpg" height="200" width="170"/></p>
+<h2>Where to Place Images 
+in Your Code</h2>
+<p>Where an image is placed 
+in the code will affect how it 
+is displayed. Here are three 
+examples of image placement 
+that produce different results:<dl><dt> <b>before a paragraph</b></dt>
+<dd>The paragraph starts on a new 
+line after the image.</dd><br/><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\moreno on Twitter.jfif" height="250" width="150"/><p>Being lonely can be painful.<br/> It causes the heart to sting <br>But physically being alone <br/>Isn't always the same thing.</p>
+<dt><b> inside the start of a 
+paragraph</b></dt><dd>
+The first row of text aligns with 
+the bottom of the image.</dd><br/><p><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\moreno on Twitter.jfif" height="250" width="150"/>Being lonely can be painful.<br/> It causes the heart to sting <br>But physically being alone <br/>Isn't always the same thing.</p>
+<dt><b>in the middle of a 
+paragraph</b></dt><dd>
+The image is placed between the 
+words of the paragraph that it 
+appears in.</dd><p>Being lonely <img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\moreno on Twitter.jfif" height="250" width="150"/> can be painful.<br/> It causes the heart to sting <br>But physically being alone <br/>Isn't always the same thing.</p>
+</p></p>
+<h2>Old Code: Aligning 
+Images Horizontally
+</h2>
+<p>The align attribute was 
+commonly used to indicate how 
+the other parts of a page should 
+flow around an image. It has 
+been removed from HTML5 
+and new websites should use 
+CSS to control the alignment of 
+images (as you will see on pages 
+411-412). 
+I have discussed it here because 
+you are likely to come across 
+it if you look at older code, and 
+because some visual editors still 
+insert this attribute when you 
+indicate how an image should be 
+aligned.
+The align attribute can take 
+these horizontal values:<br/>
+<b>Left</b><br/>
+This aligns the image to the left 
+(allowing text to flow around its 
+right-hand side).<br/><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\WhatsApp Image 2024-04-18 at 1.34.33 PM.jpeg" align="left" height="300" width="300"/><br/><br/><br/><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<b>Right</b><br/>
+This aligns the image to the right 
+(allowing text to flow around its 
+left-hand side).<br/><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\WhatsApp Image 2024-04-18 at 1.34.33 PM.jpeg" align="right" height="300" width="300"/><br/><br/><br/><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>Old Code: Aligning 
+Images Vertically</h2>
+<p>As you saw on the last page, the 
+align attribute is no longer used 
+in HTML5, but it is covered here 
+because you may see it used in 
+older websites and it is still used 
+in the code created by some 
+visual editors.
+You can see how to use CSS 
+to achieve the same effects on 
+pages 285-286.
+There are three values that the 
+align attribute can take that 
+control how the image should 
+align vertically with the text that 
+surrounds it:
+<br/><b>top</b><br/>
+This aligns the first line of the 
+surrounding text with the top of 
+the image.<p><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\55e268ef-10b6-4654-b67c-b9012f4bbf11.jpg" align="top" height="270" width="170"/>This is the time of year when the days keep getting shorter and darker until the solstice finally arrives and the light begins ever so slowly its return. Light, and the return of it, is symbolic in myriad religious and cultural celebrations during the season. In addition to the winter solstice, there is the star that guided the shepherds by night in Bethlehem to witness the birth of Christ and brightly colored Christmas lights on houses and in trees. There is the lighting of the Hanukkah menorah, and fireworks and diyas during Diwali, the Hindu Festival of Lights.</p>
+<br/><b>middle</b><br/>
+
+This aligns the first line of the 
+surrounding text with the middle 
+of the image.<p><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\55e268ef-10b6-4654-b67c-b9012f4bbf11.jpg" align="middle" height="270" width="170"/>This is the time of year when the days keep getting shorter and darker until the solstice finally arrives and the light begins ever so slowly its return. Light, and the return of it, is symbolic in myriad religious and cultural celebrations during the season. In addition to the winter solstice, there is the star that guided the shepherds by night in Bethlehem to witness the birth of Christ and brightly colored Christmas lights on houses and in trees. There is the lighting of the Hanukkah menorah, and fireworks and diyas during Diwali, the Hindu Festival of Lights.</p>
+<br/><b>bottom</b><br/>
+
+This aligns the first line of the 
+surrounding text with the bottom 
+of the image.<p><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\55e268ef-10b6-4654-b67c-b9012f4bbf11.jpg" align="bottom" height="270" width="170"/>This is the time of year when the days keep getting shorter and darker until the solstice finally arrives and the light begins ever so slowly its return. Light, and the return of it, is symbolic in myriad religious and cultural celebrations during the season. In addition to the winter solstice, there is the star that guided the shepherds by night in Bethlehem to witness the birth of Christ and brightly colored Christmas lights on houses and in trees. There is the lighting of the Hanukkah menorah, and fireworks and diyas during Diwali, the Hindu Festival of Lights.</p></p>
+<h2>Figure and 
+Figure Caption
+</h2><p>Images often come with 
+captions. HTML5 has introduced 
+a new figure element to 
+contain images and their caption 
+so that the two are associated. 
+You can have more than one 
+image inside the <figure>
+element as long as they all share 
+the same caption.
+<figcaption>
+The figcaption element has 
+been added to HTML5 in order 
+to allow web page authors to add 
+a caption to an image.
+Before these elements were 
+created there was no way to 
+associate an img element with 
+its caption.
+Older browsers that do not 
+understand HTML5 elements 
+simply ignore the new elements 
+and display the content of them.used as bellow:</p>
+<figure><img src="C:\Users\LENOVO\Desktop\codenetic 2\pages\By Daniel Van Der Putten holland festő_.jpg"
+"C:\Users\LENOVO\Desktop\codenetic 2\pages\ENTARDECER.jpg"
+"C:\Users\LENOVO\Desktop\codenetic 2\pages\Hessah art.jpg" /><figcaption>"Life's a climb. But the view is great." There are times when things seemingly go to plan, and there are other moments when nothing works out.<br/>
+
+During those instances, you might feel lost. But words of encouragement can help. Certain quotes can inspire and remind you to live life to the fullest and persevere through whatever challenges come your way.</figcaption>
+</figure>
+
+</body>
+<a href="../home page.html">home page</a>
+
+</html>

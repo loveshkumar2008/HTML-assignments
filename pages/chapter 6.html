@@ -1,0 +1,145 @@
+<html>
+<header><title>chapter 6:tables</title></header>
+<body>
+<h1>Tables</h1>
+<p>A table represents information in a grid format. 
+Examples of tables include financial reports, TV 
+schedules, and sports results.</p>
+<h2>Basic Table Structure
+</h2>
+<p>The table element is used 
+to create a table. The contents 
+of the table are written out row 
+by row.<br>
+
+You indicate the start of each 
+row using the opening tr tag. 
+(The tr stands for table row.) 
+It is followed by one or more 
+td elements (one for each cell 
+in that row). 
+At the end of the row you use a 
+closing /tr tag.
+<td>
+Each cell of a table is 
+represented using a td
+element. (The td stands for 
+table data.)
+At the end of each cell you use a 
+closing /td tag.
+Some browsers automatically 
+draw lines around the table 
+and/or the individual cells. You 
+will learn how to control the 
+borders of tables using CSS on 
+pages 309-312 and 337-340.</p>
+example:<table>
+<tr><td>one</td><td>two</td><td>three</td></tr>
+<tr><td>four</td><td>five</td><td>six</td></tr>
+<tr><td>seven</td><td>eight</td><td>nine</td></tr>
+</table>
+<h2>Table headings</h2>
+<p>The th element is used just 
+like the td element but its 
+purpose is to represent the 
+heading for either a column or 
+a row. (The th stands for table 
+heading.) 
+Even if a cell has no content, 
+you should still use a td or 
+th element to represent 
+the presence of an empty cell 
+otherwise the table will not 
+render correctly. (The first cell 
+in the first row of this example 
+shows an empty cell.)
+Using th elements for 
+headings helps people who 
+use screen readers, improves 
+the ability for search engines 
+to index your pages, and also 
+enables you to control the 
+appearance of tables better 
+when you start to use CSS.
+You can use the scope attribute 
+on the th element to indicate 
+whether it is a heading for a 
+column or a row. It can take the 
+values: row to indicate a heading 
+for a row or col to indicate a 
+heading for a column.
+Browsers usually display the 
+content of a th element in 
+bold and in the middle of the cell.
+example:<br/>
+<table><tr><th></th><th scope="col">Monday</th>
+<th scope="col">Tueasday</th><th scope="col">Wednesday</th><th scope="col">Thursday</th><th scope="col">Friday</th><th scope="col">Saturday</th><th scope="col">Sunday</th></tr><tr><th scope="row">1st:</th><td>English</td><td>English</td><td>English</td><td>English</td><td>English</td><td>English</td><td></td></tr>
+</table><br/>
+<h2>Spanning Columns</h2>
+<p>Sometimes you may need the 
+entries in a table to stretch 
+across more than one column.
+The colspan attribute can be 
+used on a th or td element 
+and indicates how many columns 
+that cell should run across.
+In the example on the right 
+you can see a timetable with 
+five columns; the first column 
+contains the heading for that 
+row (the day), the remaining four 
+represent one hour time slots.
+If you look at the table cell that 
+contains the words 'Geography' 
+you will see that the value of the 
+colspan attribute is 2, which 
+indicates that the cell should run 
+across two columns. In the third 
+row, 'Gym' runs across three 
+columns.
+You can see that the second 
+and third rows have fewer 
+td elements than there are 
+columns. This is because, when 
+a cell extends across more than 
+one column, the td or th
+cells that would have been in the 
+place of the wider cells are not 
+included in the code.
+I added some CSS styles to this 
+example so that you can see how 
+the cells span more than one 
+column. You will learn how to do 
+this on pages 250, 337-340.</p>
+<h2>Spanning rows</h2>
+<p>You may also need entries in 
+a table to stretch down across 
+more than one row.
+The rowspan attribute can be 
+used on a <th> or td element 
+to indicate how many rows a cell 
+should span down the table.
+In the example on the left you 
+can see that ABC is showing a 
+movie from 6pm - 8pm, whereas 
+the BBC and CNN channels are 
+both showing two programs 
+during this time period (each of 
+which lasts one hour).
+If you look at the last tr
+element, it only contains three 
+elements even though there are 
+four columns in the result below. 
+This is because the movie in the 
+tr element above it uses the 
+rowspan attribute to stretch 
+down and take over the cell 
+below.
+I have added some CSS styles to 
+this example so that you can see 
+how the cells span more than 
+one row. You will learn how to 
+apply these CSS styles to tables 
+on pages 250, 337-340.</p>
+
+</body></html>
